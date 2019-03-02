@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-digester-1.8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-digester-1.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-logging-1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-logging-api-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

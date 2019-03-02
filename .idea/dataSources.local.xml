@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="HSQLDB (Local) - jdbc:hsqldb:hsql://localhost:9001/sampledb" uuid="120c0a0c-b355-43b8-897d-afd315e7489c">
+      <database-info product="HSQL Database Engine" version="2.4.1" jdbc-version="4.2" driver-name="HSQL Database Engine Driver" driver-version="2.4.0" family="HSQLDB" exact-version="2.4.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>SA</user-name>
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
+  </component>
+</project>

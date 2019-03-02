@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-chain-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-cli-1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/commons-codec-1.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

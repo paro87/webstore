@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="tiles-api-3.0.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-api-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-jsp-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-servlet-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-template-3.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

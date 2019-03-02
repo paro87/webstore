@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tiles">
+    <CLASSES>
+      <root url="file://$MAVEN_REPOSITORY$/org/apache/tiles" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/apache/tiles" recursive="false" />
+  </library>
+</component>

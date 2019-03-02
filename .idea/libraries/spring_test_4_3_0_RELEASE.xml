@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-test-4.3.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.0.RELEASE/spring-test-4.3.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow.xsd">
+    <!--The <var> tag creates a variable in a flow. This variable will be available to all states in a
+    flow, which means we can reference and use this variable inside any state within the flow.
+    In the preceding <var> tag, we just created a new instance of the Order class and stored it
+    in a variable called order.-->
+    <var name="order" class="com.paro.domain.Order"/>
+    <!--action states are normally used to invoke backend services, so in the following <action-state> definition we have just invoked the validate
+    method of the cartServiceImpl object and stored the result in the order.cart object-->
+    <action-state id="addCartToOrder">
+        <!--Use requestParameters to access a client request parameter. For instance, http://localhost:8080/webstore/checkout?cartId=55AD1472D4EC-->
+        <evaluate expression="cartServiceImpl.validate(requestParameters.cartId)" result="order.cart" />
+        <transition to="invalidCartWarning" on-exception="com.paro.exception.InvalidCartException" />
+        <transition to="collectCustomerInfo" />
+    </action-state>
+    <!--If the View attribute is not specified, then the ID of the view-state acts as the logical View name.-->
+    <!--We defined the View that needs to be rendered via the view attribute and the Model that needs to be attached via the model attribute-->
+    <view-state id="collectCustomerInfo" view="collectCustomerInfo.jsp" model="order">
+        <!--a transition can be triggered via an event, so here the transition to the collectShippingDetail state would get triggered when the
+        customerInfoCollected event is triggered.-->
+        <transition on="customerInfoCollected" to="collectShippingDetail" />
+    </view-state>
+    <!--we haven't mentioned the view attribute in the collectShippingDetail state; in that case Spring Web Flow would consider the id of the view state to be the
+    View name.-->
+    <view-state id="collectShippingDetail" model="order">
+        <transition on="shippingDetailCollected" to="orderConfirmation" />
+        <transition on="backToCollectCustomerInfo" to="collectCustomerInfo" />
+    </view-state>
+    <view-state id="orderConfirmation">
+        <transition on="orderConfirmed" to="processOrder" />
+        <transition on="backToCollectShippingDetail" to="collectShippingDetail" />
+    </view-state>
+    <action-state id="processOrder">
+        <evaluate expression="orderServiceImpl.saveOrder(order)" result="order.orderId"/>
+        <transition to="thankCustomer" />
+    </action-state>
+    <view-state id="invalidCartWarning">
+        <transition to="endState"/>
+    </view-state>
+    <view-state id="thankCustomer" model="order">
+        <transition to="endState"/>
+    </view-state>
+    <end-state id="endState"/>
+    <end-state id="cancelCheckout" view = "checkOutCancelled.jsp"/>
+    <global-transitions>
+        <transition on = "cancel" to="cancelCheckout" />
+    </global-transitions>
+</flow>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="tiles-compat-3.0.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-compat-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-el-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-freemarker-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-mvel-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-ognl-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-request-mustache-1.0.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-request-servlet-wildcard-1.0.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-template-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-velocity-3.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/tiles-request-api-1.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

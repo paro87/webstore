@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="spring-security-config-4.1.1.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-security-config-4.1.1.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-security-web-4.1.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/spring-security-config-4.1.1.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
